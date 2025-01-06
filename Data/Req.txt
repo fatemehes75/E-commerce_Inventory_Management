@@ -1,0 +1,5 @@
+Raw Data Endpoint: https://my.api.mockaroo.com/phone_inventory.json
+Key = X-API-Key
+Value = 1cf59630
+
+S3 Endpoint= https://9462996iy2.execute-api.us-east-2.amazonaws.com/dev/inventoryphone/{filename}
