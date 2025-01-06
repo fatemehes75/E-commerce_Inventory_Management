@@ -1,4 +1,4 @@
-# AI-Driven Inventory Management System
+# AI-Driven Inventory Management System with Demand Forecastin
 
 The system is designed to help businesses optimize their restocking needs based on historical sales data. The platform enables businesses to forecast sales and make informed inventory decisions, thus ensuring stock levels are optimized and reducing both stockouts and overstocking.
 
