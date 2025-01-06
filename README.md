@@ -44,6 +44,10 @@ This system offers a robust solution for e-commerce businesses to predict sales 
 Automation and Scheduling
 * If you need to regularly fetch data from the API and store it in S3, consider setting up an automation pipeline with AWS Lambda and CloudWatch Events (for periodic triggers) or use AWS Step Functions if the process requires multiple steps.
 
+## Screenshot
+Here is a preview of the application:
+
+<img width="518" alt="Screenshot 2025-01-06 at 4 27 05 PM" src="https://github.com/user-attachments/assets/2b0b2c51-c371-4c6a-9203-25436c6f1f19" />
 
 
 
