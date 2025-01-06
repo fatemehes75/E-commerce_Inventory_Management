@@ -2,20 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Inventory Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restocking Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Inventory Management</h1>
-    <form method="POST" action="/predict">
-        <label for="year">Year:</label>
-        <input type="number" id="year" name="year" required><br><br>
-        <label for="month">Month:</label>
-        <input type="number" id="month" name="month" required><br><br>
-        <label for="day">Day:</label>
-        <input type="number" id="day" name="day" required><br><br>
-        <label for="inventory_level">Current Inventory Level:</label>
-        <input type="number" id="inventory_level" name="inventory_level" required><br><br>
-        <input type="submit" value="Predict Restocking">
-    </form>
+
+    <h1>Inventory Restocking Prediction</h1>
+
+    <div class="form-container">
+        <form action="/predict" method="POST">
+            <label for="year">Year:</label>
+            <input type="text" id="year" name="year" required><br><br>
+
+            <label for="month">Month:</label>
+            <input type="text" id="month" name="month" required><br><br>
+
+            <label for="day">Day:</label>
+            <input type="text" id="day" name="day" required><br><br>
+
+            <label for="inventory_level">Current Inventory Level:</label>
+            <input type="text" id="inventory_level" name="inventory_level" required><br><br>
+
+            <label for="product_name">Product Name:</label>
+            <select id="product_name" name="product_name" required>
+                <option value="">Select a product</option>
+                <option value="Alcatel">Alcatel</option>
+                <option value="BlackBerry">BlackBerry</option>
+                <option value="Google Pixel">Google Pixel</option>
+                <option value="HTC">HTC</option>
+                <option value="Huawei">Huawei</option>
+                <option value="LG">LG</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="Motorola">Motorola</option>
+                <option value="Nokia">Nokia</option>
+                <option value="OnePlus">OnePlus</option>
+                <option value="Samsung Galaxy">Samsung Galaxy</option>
+                <option value="Sony Xperia">Sony Xperia</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="ZTE">ZTE</option>
+                <option value="iPhone">iPhone</option>
+            </select><br><br>
+
+            <button type="submit">Get Restocking Recommendation</button>
+        </form>
+    </div>
+
 </body>
 </html>
+
